@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Online Training</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Computer Online Training</h1>
+            <p>Learn from industry experts and advance your career.</p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <ul>
+                <li>Software Development</li>
+                <li>Networking</li>
+                <li>Cybersecurity</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Computer Online Training</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
